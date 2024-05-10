@@ -17,7 +17,7 @@ namespace Users.DAL
             if (!context.Users.Any())
             {
                 List<User> list = new List<User>()
-                {
+                { 
                     new User()  {Username = "MarioRossi"},
                     new User()  {Username = "FabioBianchi"},
                     new User()  {Username = "PaoloVerdi"},

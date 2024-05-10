@@ -1,15 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Users.Models
+namespace Products.Models
 {
-    public class User
+    public class Product
     {
         [Key]
-        [Required]
         public int Id { get; set; }
         [Required]
-        public string Username { get; set; }
+        public string Name { get; set; }
+        [Required]
+        public string Category { get; set; }
         public List<int> Orders { get; set; }
-
     }
 }

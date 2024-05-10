@@ -5,7 +5,6 @@ namespace Orders.Models
     public class Order
     {
         [Key]
-        [Required]
         public int Id { get; set; }
         [Required]
         public int User_Id { get; set; }

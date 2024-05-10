@@ -1,16 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Products.Models
+namespace Users.Models
 {
-    public class Product
+    public class User
     {
         [Key]
-        [Required]
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; }
-        [Required]
-        public string Category { get; set; }
+        public string Username { get; set; }
         public List<int> Orders { get; set; }
+
     }
 }
